@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, {useState, useEffect,} from 'react'
+import { DatePicker } from 'antd';
 
 const Available = (props)=>{
 
@@ -20,6 +21,8 @@ const Available = (props)=>{
   return (
 		<div>
 			<h1>Available Page</h1>
+			<DatePicker />
+		
 		</div>
 	)   
 }
