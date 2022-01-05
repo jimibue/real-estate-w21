@@ -12,7 +12,7 @@ class Property < ApplicationRecord
   # ORDER BY a.id;
 
   def self.available
-    select('properties.id, price, beds,  baths, ad.city, ad.zip, 
+    select('properties.id, price, beds, sq_ft, baths, ad.city, ad.zip, 
     ad.street, a.id as agent_id, a.first_name, a.last_name, a.email, 
     ad.id as address_id')
     .joins('INNER JOIN agents AS a ON a.id = properties.agent_id
