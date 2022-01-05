@@ -8,12 +8,14 @@ import RequireAuth from "./components/RequireAuth";
 import Navbar from "./components/Navbar";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Available from "./pages/Available";
 
 function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
         {/* public routes go here */}
+        <Route path='/available' element={<Available/>}/>
         <Route path="/public" element={<Public />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />

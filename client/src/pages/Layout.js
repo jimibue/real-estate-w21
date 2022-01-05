@@ -29,11 +29,9 @@ const Layout = () => {
           <Link to="/">Home</Link>
         </div>
         <div>
-          <Link to="/public">Public</Link>
+          <Link to="/available">Available</Link>
         </div>
-        <div>
-          <Link to="/protected">Protected</Link>
-        </div>
+
         {renderAuthLinks()}
       </div>
       <div style={styles.pageContainer}>
