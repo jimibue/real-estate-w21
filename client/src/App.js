@@ -5,10 +5,10 @@ import Protected from "./pages/Protected";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout";
 import RequireAuth from "./components/RequireAuth";
-import Navbar from "./components/Navbar";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Available from "./pages/Available";
+import Cities from "./pages/Cities";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <Route element={<Layout />}>
         {/* public routes go here */}
         <Route path='/available' element={<Available/>}/>
+        <Route path='/cities' element={<Cities />}/>
         <Route path="/public" element={<Public />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
