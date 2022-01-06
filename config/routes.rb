@@ -6,5 +6,9 @@ Rails.application.routes.draw do
     get "properties", to: "properties#index"
     get "cities", to: "properties#get_cities"
     get "cities/:city", to: "properties#city"
+    resources :agents, only: [:index, :show]
+    resources :buyers, only: [:show]
+    # get 'agents', to:"agents#index"
+    # get "agents/:id", to: "agents#show"
   end
 end
