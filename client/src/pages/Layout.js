@@ -31,6 +31,9 @@ const Layout = () => {
         <div>
           <Link to="/available">Available</Link>
         </div>
+        <div>
+          <Link to="/cities">Cities</Link>
+        </div>
 
         {renderAuthLinks()}
       </div>
