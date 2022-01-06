@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     resources :cats, only: [:index, :update]
     get "properties", to: "properties#index"
+    get "cities", to: "properties#get_cities"
+    get "cities/:city", to: "properties#city"
   end
 end
