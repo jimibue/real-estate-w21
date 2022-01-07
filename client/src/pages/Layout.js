@@ -34,6 +34,9 @@ const Layout = () => {
         <div>
           <Link to="/cities">Cities</Link>
         </div>
+        <div>
+          <Link to="/find_homes">Find Homes</Link>
+        </div>
 
         {renderAuthLinks()}
       </div>
